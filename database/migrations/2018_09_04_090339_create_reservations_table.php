@@ -16,8 +16,6 @@ class CreateReservationsTable extends Migration
         Schema::create('reservations', function (Blueprint $table) {
             $table->increments('id');
             $table->date('date');
-            $table->time('hour_from');
-            $table->time('hour_to');
             $table->integer('reservation_id');
             $table->string('reservation_type');
             $table->boolean('active')->default(0);
