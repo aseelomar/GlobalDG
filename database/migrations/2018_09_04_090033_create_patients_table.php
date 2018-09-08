@@ -19,7 +19,7 @@ class CreatePatientsTable extends Migration
             $table->string('last_name');
             $table->boolean('gender');
             $table->integer('age');
-            $table->string('reason_visiting');
+            $table->integer('phone');
             $table->boolean('active')->default(0);
             $table->timestamps();
         });

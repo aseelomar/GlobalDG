@@ -19,6 +19,7 @@ class CreateDoctorsTable extends Migration
             $table->string('last_name');
             $table->boolean('gender');
             $table->integer('age');
+            $table->text('image');
             $table->boolean('active')->default(0);
             $table->string('clinic_name');
 
